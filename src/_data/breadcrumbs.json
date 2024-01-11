@@ -1,0 +1,14 @@
+[
+  {
+    "to": "/",
+    "text": "Home"
+  },
+  {
+    "to": "/some",
+    "text": "Some"
+  },
+  {
+    "to": "/some/path",
+    "text": "Some Path`"
+  }
+]
