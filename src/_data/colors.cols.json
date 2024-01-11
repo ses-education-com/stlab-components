@@ -1,0 +1,12 @@
+[
+  {
+    "field": "color",
+    "headerName": "Color",
+    "flex": 1
+  },
+  {
+    "field": "value",
+    "headerName": "HEX code",
+    "flex": 1
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "@ses-education/modal-window",
+  "version": "1.0.0",
+  "description": "React js component to display a modal window with header, content and buttons sections",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SES Education",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.12.3"
+  },
+  "devDependencies": {
+    "sass": "^1.54.8"
+  }
+}

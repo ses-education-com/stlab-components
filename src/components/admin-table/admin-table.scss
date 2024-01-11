@@ -1,0 +1,66 @@
+.admin-table-container {
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+
+  .admin-table-toolbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+    .admin-table-buttons{
+      flex-grow: 1;
+
+      button{
+        margin-right: 0.4em;
+      }
+    }
+  }
+
+  .table-row-buttons{
+    opacity: 0.4;
+    transition: 0.2s opacity;
+    button{
+      font-size: 0.8em;
+      padding: 0.2em 1em;      
+      svg{
+        width: 0.6em;
+        height: 0.6em;
+      }
+    }
+  }
+
+  // MUI-based
+  .MuiDataGrid-root{
+    .MuiDataGrid-row{
+      &.Mui-even{
+        background-color: rgba(0,0,0,0.05);
+      }
+      &:hover{
+        background-color: #c2cbfa;
+        .table-row-buttons{
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+
+  .green-btn {
+    background-color: green !important;
+    color: white !important;
+  }
+
+  .chip{
+    display: inline-flex;
+    background: #177f7f;
+    border-radius: 1em;
+    padding: 0.4em 0.8em;
+    margin: 0.3em 0.3em;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+    line-height: 1em;
+    color: white;
+  }
+}

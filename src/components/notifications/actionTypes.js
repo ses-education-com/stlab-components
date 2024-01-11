@@ -1,0 +1,8 @@
+const ActionTypes = {
+  SHOW_MESSAGE: 'SHOW_MESSAGE',
+  DELETE_MESSAGE: 'DELETE_MESSAGE',
+  HIDE_MESSAGE: 'HIDE_MESSAGE',
+  CLEAR_ALL_MESSAGES: 'CLEAR_ALL_MESSAGES',
+};
+
+export default ActionTypes;

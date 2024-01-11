@@ -1,0 +1,24 @@
+.avatar-selector {
+  display: flex;
+  width: 100%;
+  height: 8.3em; // this is about the same as the width of the image
+  align-items: stretch;
+  justify-content: stretch;
+  cursor: pointer;
+  border-radius: 0.5em;
+  &:hover {
+    box-shadow: 0.2em 0.2em 0.4em 0.1em rgba(0, 0, 0, 0.2);
+  }
+  .avatar-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    flex-grow: 1;
+  }
+}
