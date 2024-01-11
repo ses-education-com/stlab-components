@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker'
 
+import AutoBreadcrumbs from './components/auto-breadcrumbs';
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -11,3 +13,6 @@ ReactDOM.render(
 );
 
 serviceWorker.unregister();
+
+
+export {AutoBreadcrumbs};
