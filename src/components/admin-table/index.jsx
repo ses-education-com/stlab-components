@@ -3,7 +3,6 @@ import React from "react";
 import uniquid from "uniquid";
 import {
   DataGrid,
-  // GridLinkOperator,
   GridToolbarContainer,
   GridToolbarExport,
   GridOverlay,
@@ -11,18 +10,6 @@ import {
 import GridSearchComponent from "./grid-search-component";
 import "./admin-table.scss";
 import { LinearProgress } from "@material-ui/core";
-
-// const CreateCustomToolbar =
-//   ({ buttons, searchComponent }) =>
-//   () =>
-//     (
-//       <GridToolbarContainer className="admin-table-toolbar">
-//         {/* <>
-//           {buttons} */}
-//           {searchComponent}
-//         {/* </> */}
-//       </GridToolbarContainer>
-//     );
 
 const CustomToolbar = ({ children }) => (
   <GridToolbarContainer className="admin-table-toolbar">

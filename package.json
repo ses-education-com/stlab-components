@@ -6,8 +6,7 @@
   "scripts": {
     "start": "react-scripts start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bootstrap": "npx lerna bootstrap",
-    "build": "npx lerna run build",
+    "version": "npx lerna version",
     "publish": "npx lerna publish"
   },
   "repository": {
