@@ -2,7 +2,7 @@
   "name": "@ses-education/stlab-modal-window",
   "description": "React js component to display a modal window with header, content and buttons sections",
   "main": "index.js",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
