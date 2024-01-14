@@ -1,6 +1,6 @@
 {
-  "name": "@ses-education/stlab-admin-table",
-  "version": "1.0.0-alpha.0",
+  "name": "@ses-education/auto-breadcrumbs",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
