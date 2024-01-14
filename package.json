@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bootstrap": "npx lerna bootstrap",
+    "build": "npx lerna build",
+    "publish": "npx lerna publish"
   },
   "repository": {
     "type": "git",
@@ -22,12 +25,11 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "@tinymce/tinymce-react": "^3.10.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "tinymce": "^5.9.2",
     "uniquid": "^1.1.4"
   },
   "devDependencies": {
+    "lerna": "^7.4.2",
     "react-error-overlay": "^6.0.11",
     "react-router-dom": "^5.3.4",
     "react-scripts": "^5.0.1",
