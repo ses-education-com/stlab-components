@@ -6,7 +6,7 @@
   "scripts": {
     "start": "react-scripts start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "version": "npx lerna version",
+    "ver": "npx lerna version",
     "publish": "npx lerna publish"
   },
   "repository": {
