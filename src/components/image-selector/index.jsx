@@ -1,7 +1,8 @@
 import { IconButton } from "@material-ui/core";
 import Delete from "@material-ui/icons/Delete";
 import React from "react";
-import ConfirmDialog from "@ses-education.stlab-shared/confirm-dialog";
+// import ConfirmDialog from "@ses-education.stlab-shared/confirm-dialog";
+import ConfirmDialog from "../confirm-dialog";
 import "./image-selector.scss";
 
 /**

@@ -1,11 +1,11 @@
 {
   "name": "@ses-education/courses-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "shared components for STLAB project",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "ver": "npx lerna version",
     "publish": "npx lerna publish"
@@ -30,10 +30,12 @@
   },
   "devDependencies": {
     "lerna": "^7.4.2",
+    "mini-css-extract-plugin": "^2.7.7",
     "react-error-overlay": "^6.0.11",
     "react-router-dom": "^5.3.4",
     "react-scripts": "^5.0.1",
-    "sass": "^1.69.7"
+    "sass": "^1.69.7",
+    "webpack-cli": "^5.1.4"
   },
   "eslintConfig": {
     "extends": "react-app"
