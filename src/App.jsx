@@ -4,6 +4,8 @@ import React from "react";
 import AdminTable from "./components/admin-table";
 
 import AutoBreadcrumbs from "./components/auto-breadcrumbs";
+import AvatarSelector from './components/avatar-selector';
+import Spinner from './components/spinner';
 
 import colorList from './_data/colors.json';
 import colorColumns from './_data/colors.cols.json';
@@ -22,7 +24,16 @@ function App() {
         <div>
           <AdminTable autoHeight columns={colorColumns} rows={colorList.map( (c,id) => ({...c, id}))} />
         </div>
-        
+        <div>
+          <h2>Spinner</h2>
+          <Spinner />
+        </div>
+        <div>
+          <h2>Avatar selector</h2>
+          <div style={{display: "flex", width: 200, height: 300}}>
+           <AvatarSelector />
+          </div>
+        </div>
       </div>
     </BrowserRouter>
   );
