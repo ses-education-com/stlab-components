@@ -1,0 +1,128 @@
+.text-color-question {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7px 0;
+  overflow: hidden;
+
+  &.has-errors {
+    background-color: rgba(255, 0, 0, 0.247);
+    .color-button {
+      box-shadow: 0 0 5px 8px rgba(255, 0, 0, 0.473);
+      border: 1px solid white;
+    }
+  }
+
+  .color-button {
+    border-radius: 6px;
+    padding: 5px 5px;
+    // margin: 5px 5px;
+    width: auto;
+    // height: inherit;
+    min-height: 30px;
+    min-width: 30px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.05);
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+
+    &:hover {
+      background-color: rgba(151, 148, 151, 0.747);
+    }
+
+    &[data-btn-color='red'] {
+      background-color: red;
+    }
+    &[data-btn-color='yellow'] {
+      background-color: yellow;
+    }
+    &[data-btn-color='white'] {
+      background-color: white;
+      border: 2px solid black;
+    }
+    &[data-btn-color='black'] {
+      background-color: black;
+    }
+    &[data-btn-color='orange'] {
+      background-color: orange;
+    }
+    &[data-btn-color='brown'] {
+      background-color: brown;
+    }
+    &[data-btn-color='green'] {
+      background-color: green;
+    }
+    &[data-btn-color='gold'] {
+      background-color: gold;
+    }
+    &[data-btn-color='silver'] {
+      background-color: silver;
+    }
+  }
+
+  [data-btn-color]::after {
+    content: attr(data-btn-color);
+    display: inline-block;
+    width: -moz-fit-content;
+    min-width: calc(100% - 0.8em);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 9px;
+    color: #ffffffd1;
+    background: #000000;
+    padding: 0.1em 0.5em;
+    border-radius: 6px;
+    transform: translate(-50%, 40%);
+
+    // content: '' attr(btnColor);
+    // display: inline-block;
+    // width: fit-content;
+    // height: 18px;
+    // position: absolute;
+    // top: 20px;
+    // right: 0px;
+    // font-size: 10px;
+    // color: aqua;
+    // background: rgb(36, 72, 138);
+    // padding: 0.1em 0.3em;
+    // border-radius: 6px;
+  }
+
+  .color-select-box {
+    width: 115px;
+  }
+
+  .color-question-menu {
+    [data-btn-color='red'] {
+      color: red;
+    }
+    [data-btn-color='white'] {
+      background-color: lightgrey;
+      color: white;
+    }
+    [data-btn-color='black'] {
+      color: black;
+    }
+    [data-btn-color='orange'] {
+      color: orange;
+    }
+    [data-btn-color='brown'] {
+      color: brown;
+    }
+    [data-btn-color='green'] {
+      color: green;
+    }
+    [data-btn-color='gold'] {
+      color: gold;
+    }
+    [data-btn-color='silver'] {
+      color: silver;
+    }
+  }
+}

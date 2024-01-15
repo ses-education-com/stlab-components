@@ -1,0 +1,26 @@
+.text-binary-question {
+  .MuiButton-containedPrimary {
+    .MuiButton-label {
+      border-bottom: solid 1px white;
+    }
+  }
+}
+
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.mistake {
+  color: red;
+  font-weight: bold;
+}
+
+.description {
+  font-weight: bold;
+}
+
+.binary-image {
+  width: 200px;
+  height: auto;
+}

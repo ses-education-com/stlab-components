@@ -11,6 +11,7 @@ import colorList from './_data/colors.json';
 import colorColumns from './_data/colors.cols.json';
 import breadcrumbs from './_data/breadcrumbs.json';
 import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
+import { Parser } from "./export";
 
 function App() {
   return (
@@ -33,6 +34,10 @@ function App() {
           <div style={{display: "flex", width: 200, height: 300}}>
            <AvatarSelector />
           </div>
+        </div>
+        <div>
+          <h2>Parser</h2>
+          <Parser />
         </div>
       </div>
     </BrowserRouter>
