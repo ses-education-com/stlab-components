@@ -8,7 +8,8 @@ import ModalWindow from './components/modal-window';
 import Notifications from './components/notifications';
 import Spinner from './components/spinner';
 import TinymceEditor from './components/tinymce-editor';
-import Parser from './components/parser';
+import Parser, {debounce, pipeline} from './components/parser';
+import {showMessage, deleteMessage, hideMessage, clearAllMessages } from './components/notifications/notificationActions';
 
 export {
             AdminTable, 
@@ -21,5 +22,7 @@ export {
             Notifications,
             Parser,
             Spinner,
-            TinymceEditor
+            TinymceEditor,
+            debounce, pipeline, 
+            showMessage, hideMessage, deleteMessage, clearAllMessages
         };
