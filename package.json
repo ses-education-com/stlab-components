@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "shared components for STLAB project",
   "main": "index.js",
+  "module": "dist/index.esm.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "webpack",
