@@ -1,6 +1,6 @@
 import { Button, Typography } from '@material-ui/core'
 import React from 'react'
-import ModalWindow from '@ses-education.stlab-shared/modal-window'
+import ModalWindow from '../modal-window'
 
 
 class ConfirmDialog extends React.Component{

@@ -4,6 +4,10 @@ import App from './App';
 // import * as serviceWorker from './serviceWorker'
 
 import AutoBreadcrumbs from './components/auto-breadcrumbs';
+import ModalWindow from './components/modal-window';
+import AdminTable from './components/admin-table';
+import AvatarSelector from './components/avatar-selector';
+import ConfirmDialog from './components/confirm-dialog';  
 
 ReactDOM.render(
   <React.StrictMode><App /></React.StrictMode>,
@@ -13,4 +17,4 @@ ReactDOM.render(
 // serviceWorker.unregister();
 
 
-export {AutoBreadcrumbs};
+export {AdminTable, AutoBreadcrumbs, AvatarSelector, ConfirmDialog};
