@@ -5,6 +5,8 @@ import "./parser.scss";
 import PropTypes from "prop-types";
 import getQuestionComponent from "./question-types";
 import Spinner from "./Spinner";
+import debounce from './Utils/debounce';
+import pipeline from './Utils/pipeline';
 // import { Button } from "@material-ui/core";
 
 /**
@@ -908,3 +910,4 @@ Parser.propTypes = {
   onErrors: PropTypes.func,
 };
 export default Parser;
+export {debounce, pipeline};
