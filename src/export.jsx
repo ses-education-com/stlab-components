@@ -23,6 +23,10 @@ export {
             Parser,
             Spinner,
             TinymceEditor,
-            debounce, pipeline, 
-            showMessage, hideMessage, deleteMessage, clearAllMessages
+            debounce, 
+            pipeline, 
+            showMessage, 
+            hideMessage, 
+            deleteMessage, 
+            clearAllMessages
         };
