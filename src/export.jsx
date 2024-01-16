@@ -10,6 +10,8 @@ import Spinner from './components/spinner';
 import TinymceEditor from './components/tinymce-editor';
 import Parser, {debounce, pipeline} from './components/parser';
 import {showMessage, deleteMessage, hideMessage, clearAllMessages } from './components/notifications/notificationActions';
+import { actionTypes as notificationsActionTypes} from './components/notifications';
+import {reducers as notificationsReducers} from './components/notifications/reducers';
 
 export {
             AdminTable, 
@@ -28,5 +30,7 @@ export {
             showMessage, 
             hideMessage, 
             deleteMessage, 
-            clearAllMessages
+            clearAllMessages,
+            notificationsActionTypes,
+            notificationsReducers
         };
