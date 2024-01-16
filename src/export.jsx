@@ -1,12 +1,12 @@
 // import AdminTable from './components/admin-table';
-import AutoBreadcrumbs from './components/auto-breadcrumbs';
+// import AutoBreadcrumbs from './components/auto-breadcrumbs';
 // import AsyncButton from './components/async-button';
 // import AvatarSelector from './components/avatar-selector';
 // import ConfirmDialog from './components/confirm-dialog';
 // import ImageSelector from './components/image-selector';
 // import ModalWindow from './components/modal-window';
 // import Notifications from './components/notifications';
-// import Spinner from './components/spinner';
+import Spinner from './components/spinner';
 // import TinymceEditor from './components/tinymce-editor';
 // import Parser, {debounce, pipeline} from './components/parser';
 // import {showMessage, deleteMessage, hideMessage, clearAllMessages } from './components/notifications/notificationActions';
@@ -17,7 +17,7 @@ import AutoBreadcrumbs from './components/auto-breadcrumbs';
 
 export {
             // AdminTable, 
-            AutoBreadcrumbs,
+            // AutoBreadcrumbs,
             // AsyncButton,
             // AvatarSelector,
             // ConfirmDialog,
@@ -25,7 +25,7 @@ export {
             // ModalWindow,
             // Notifications,
             // Parser,
-            // Spinner,
+            Spinner,
             // TinymceEditor,
             // debounce, 
             // pipeline, 
