@@ -13,6 +13,8 @@ import {showMessage, deleteMessage, hideMessage, clearAllMessages } from './comp
 import { actionTypes as notificationsActionTypes} from './components/notifications';
 import  notificationsReducers from './components/notifications/reducers';
 
+console.debug("notificationsReducers:", notificationsReducers);
+
 export {
             AdminTable, 
             AutoBreadcrumbs,
