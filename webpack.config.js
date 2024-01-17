@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 console.log("\n\n\nBundling the components...\n")
 
@@ -18,9 +19,15 @@ module.exports = {
     outputModule: true,
   },
   externals: {
-    react: 'commonjs-module react',
-    'hoist-non-react-statics': 'commonjs-module hoist-non-react-statics',
-    'jss': 'commonjs-module jss'
+    '@material-ui/core': 'commonjs @material-ui/core',
+    '@material-ui/data-grid': 'commonjs @material-ui/data-grid',
+    '@material-ui/icons': 'commonjs @material-ui/icons',
+    '@material-ui/lab': 'commonjs @material-ui/lab',
+    '@tinymce/tinymce-react': 'commonjs @tinymce/tinymce-react',
+    'react': 'commonjs react',
+    'sass': 'commonjs sass',
+    'tinymce': 'commonjs tinymce',
+    'uniquid': 'commonjs uniquid'
   },
   module: {
     rules: [
@@ -54,6 +61,7 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name].css',
         }),
+        new BundleAnalyzerPlugin()
     ],
 };
   
