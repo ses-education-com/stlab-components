@@ -41,6 +41,7 @@
     "react-scripts": "^5.0.1",
     "sass": "^1.69.7",
     "uniquid": "^1.1.4",
+    "webpack": "^5.89.0",
     "webpack-bundle-analyzer": "^4.10.1",
     "webpack-cli": "^5.1.4"
   },

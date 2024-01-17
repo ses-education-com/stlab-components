@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
@@ -13,6 +14,7 @@ module.exports = {
     library: {
       type: 'module',
     },
+    libraryTarget: "commonjs2",
     clean: true,
   },
   experiments: {
@@ -53,7 +55,7 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/i,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    // MiniCssExtractPlugin.loader,
                     'css-loader',
                     'sass-loader',
                 ],
@@ -67,10 +69,11 @@ module.exports = {
     },
     // Add plugins if needed, e.g., HtmlWebpackPlugin, MiniCssExtractPlugin
     plugins: [
-        new MiniCssExtractPlugin({
-            filename: '[name].css',
-        }),
-        new BundleAnalyzerPlugin()
+        // new MiniCssExtractPlugin({
+        //     filename: '[name].css',
+        // }),
+        new BundleAnalyzerPlugin(),
+        new webpack.DefinePlugin({ 'process.env.REACT_APP_MEDIA_URL': JSON.stringify(process.env.REACT_APP_MEDIA_URL) })
     ],
 };
   
