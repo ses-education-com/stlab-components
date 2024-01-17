@@ -18,15 +18,26 @@ module.exports = {
   experiments: {
     outputModule: true,
   },
-  externals: {
-    '@material-ui/core': 'commonjs @material-ui/core',
-    '@material-ui/data-grid': 'commonjs @material-ui/data-grid',
-    '@material-ui/icons': 'commonjs @material-ui/icons',
-    '@material-ui/lab': 'commonjs @material-ui/lab',
-    'react': 'commonjs react',
-    'sass': 'commonjs sass',
-    'uniquid': 'commonjs uniquid'
-  },
+  externals: [
+    // remove all things related to @material-ui (for some reason, just enumerating did not work)
+    (context, request, callback) => {
+      if (/^@material-ui/.test(request)) {
+        return callback(null, 'commonjs ' + request);
+      }
+      callback();
+    },
+    {
+      'jss': 'commonjs jss',
+      'css-vendor': 'commonjs css-vendor',
+      'lodash': 'commonjs lodash',
+      'prop-types': 'commonjs prop-type',
+      'react': 'commonjs react',
+      'react-dom': 'commonjs react-dom',
+      'react-router-dom': 'commonjs react-router-dom',
+      'sass': 'commonjs sass',
+      'uniquid': 'commonjs uniquid'
+    }
+  ],
   module: {
     rules: [
         {
