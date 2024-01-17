@@ -17,6 +17,11 @@ module.exports = {
   experiments: {
     outputModule: true,
   },
+  externals: {
+    react: 'commonjs-module react',
+    'hoist-non-react-statics': 'commonjs-module hoist-non-react-statics',
+    'jss': 'commonjs-module jss'
+  },
   module: {
     rules: [
         {
