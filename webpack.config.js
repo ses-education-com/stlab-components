@@ -23,10 +23,8 @@ module.exports = {
     '@material-ui/data-grid': 'commonjs @material-ui/data-grid',
     '@material-ui/icons': 'commonjs @material-ui/icons',
     '@material-ui/lab': 'commonjs @material-ui/lab',
-    '@tinymce/tinymce-react': 'commonjs @tinymce/tinymce-react',
     'react': 'commonjs react',
     'sass': 'commonjs sass',
-    'tinymce': 'commonjs tinymce',
     'uniquid': 'commonjs uniquid'
   },
   module: {

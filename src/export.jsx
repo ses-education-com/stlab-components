@@ -7,7 +7,7 @@
 // import ModalWindow from './components/modal-window';
 // import Notifications from './components/notifications';
 import Spinner from './components/spinner';
-// import TinymceEditor from './components/tinymce-editor';
+import TinymceEditor from './components/tinymce-editor';
 // import Parser, {debounce, pipeline} from './components/parser';
 // import {showMessage, deleteMessage, hideMessage, clearAllMessages } from './components/notifications/notificationActions';
 // import { actionTypes as notificationsActionTypes} from './components/notifications';
@@ -26,7 +26,7 @@ export {
             // Notifications,
             // Parser,
             Spinner,
-            // TinymceEditor,
+            TinymceEditor,
             // debounce, 
             // pipeline, 
             // showMessage, 
