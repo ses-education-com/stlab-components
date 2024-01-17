@@ -1,5 +1,7 @@
 import React from 'react';
-import { AdminTable, AutoBreadcrumbs, AvatarSelector, Parser, Spinner } from "../../export"
+import { AdminTable, AutoBreadcrumbs, AvatarSelector, 
+  // Parser, 
+  Spinner } from "../../export"
 import { debounce, pipeline, showMessage, deleteMessage, clearAllMessages, hideMessage } from "../../export";
 
 import colorList from '../../_data/colors.json';
@@ -27,7 +29,7 @@ const LocalComponents = () => {
         </div>
         <div>
           <h2>Parser</h2>
-          <Parser />
+          {/* <Parser /> */}
         </div>
       </div>
       )
