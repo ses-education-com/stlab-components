@@ -1,0 +1,262 @@
+/*!**************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/admin-table/admin-table.scss ***!
+  \**************************************************************************************************************************************/
+.admin-table-container {
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+}
+.admin-table-container .admin-table-toolbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+}
+.admin-table-container .admin-table-toolbar .admin-table-buttons {
+  flex-grow: 1;
+}
+.admin-table-container .admin-table-toolbar .admin-table-buttons button {
+  margin-right: 0.4em;
+}
+.admin-table-container .table-row-buttons {
+  opacity: 0.4;
+  transition: 0.2s opacity;
+}
+.admin-table-container .table-row-buttons button {
+  font-size: 0.8em;
+  padding: 0.2em 1em;
+}
+.admin-table-container .table-row-buttons button svg {
+  width: 0.6em;
+  height: 0.6em;
+}
+.admin-table-container .MuiDataGrid-root .MuiDataGrid-row.Mui-even {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.admin-table-container .MuiDataGrid-root .MuiDataGrid-row:hover {
+  background-color: #c2cbfa;
+}
+.admin-table-container .MuiDataGrid-root .MuiDataGrid-row:hover .table-row-buttons {
+  opacity: 1;
+}
+.admin-table-container .green-btn {
+  background-color: green !important;
+  color: white !important;
+}
+.admin-table-container .chip {
+  display: inline-flex;
+  background: #177f7f;
+  border-radius: 1em;
+  padding: 0.4em 0.8em;
+  margin: 0.3em 0.3em;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
+  line-height: 1em;
+  color: white;
+}
+/*!************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/auto-breadcrumbs/auto-breadcrumbs.scss ***!
+  \************************************************************************************************************************************************/
+.auto-breadcrumbs {
+  margin: 1em 0 1em;
+}
+.auto-breadcrumbs .breadcrumbs-item {
+  display: flex;
+  align-items: center;
+}
+/*!****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/async-button/async-button.scss ***!
+  \****************************************************************************************************************************************/
+.async-button .MuiButton-label {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+}
+.async-button .MuiButton-label .loading-icon {
+  max-width: 1.2em;
+  max-height: 1.2em;
+  margin-right: 0.6em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.async-button.icon-top .MuiButton-label {
+  flex-direction: column;
+}
+.async-button.icon-top .MuiButton-label .loading-icon {
+  margin-right: 0;
+  margin-bottom: 0.3em;
+}
+.async-button.icon-bottom .MuiButton-label {
+  flex-direction: column-reverse;
+}
+.async-button.icon-bottom .MuiButton-label .loading-icon {
+  margin-right: 0;
+  margin-top: 0.3em;
+}
+.async-button.icon-left .MuiButton-label {
+  flex-direction: row;
+}
+.async-button.icon-right .MuiButton-label {
+  flex-direction: row-reverse;
+}
+.async-button.icon-right .MuiButton-label .loading-icon {
+  margin-right: 0;
+  margin-left: 0.6em;
+}
+/*!**********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/avatar-selector/avatar-selector.scss ***!
+  \**********************************************************************************************************************************************/
+.avatar-selector {
+  display: flex;
+  width: 100%;
+  height: 8.3em;
+  align-items: stretch;
+  justify-content: stretch;
+  cursor: pointer;
+  border-radius: 0.5em;
+}
+.avatar-selector:hover {
+  box-shadow: 0.2em 0.2em 0.4em 0.1em rgba(0, 0, 0, 0.2);
+}
+.avatar-selector .avatar-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/*!****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/modal-window/modal-window.scss ***!
+  \****************************************************************************************************************************************/
+.modal-window {
+  background-color: rgb(228, 243, 255);
+  border-radius: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(40em - 2em);
+  max-width: calc(95% - 2em);
+  max-height: calc(95vh - 2em);
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.modal-window.full-screen {
+  width: calc(100% - 2em);
+  height: calc(100% - 2em);
+  max-width: calc(100% - 2em);
+  max-height: calc(100% - 2em);
+}
+@media screen and (max-width: 320px) {
+  .modal-window {
+    height: 95vh;
+  }
+}
+.modal-window .modal-header {
+  font-size: 1.4em;
+  margin-bottom: 7px;
+  display: flex;
+  justify-content: center;
+}
+.modal-window .modal-content {
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+}
+.modal-window.stretch .modal-content {
+  align-items: stretch;
+}
+.modal-window .modal-buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.modal-window .modal-buttons-container button {
+  margin: 0.2em 0.6em;
+}
+/*!********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/image-selector/image-selector.scss ***!
+  \********************************************************************************************************************************************/
+.image-selector {
+  display: flex;
+  flex-grow: 1;
+  align-items: stretch;
+  justify-content: stretch;
+  cursor: pointer;
+  position: relative;
+}
+.image-selector .display {
+  display: flex;
+  flex-grow: 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 0 56%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 1em;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.image-selector:hover .image-selector-close {
+  background: red;
+  color: white;
+}
+.image-selector .image-selector-close {
+  background: rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease-out background-color, 0.2s ease-out color;
+  position: absolute;
+  left: 0.2em;
+  top: 0.2em;
+}
+/*!******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/notifications/notifications.scss ***!
+  \******************************************************************************************************************************************/
+.notifications-container {
+  z-index: 2010;
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.notifications-container.has-many-items .messages {
+  max-height: 10em;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 2px 2px 6px rgba(1, 1, 1, 0.6);
+}
+.notifications-container.has-many-items .close-button {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0em;
+  top: -3em;
+  z-index: 10;
+  font-size: 0.6em;
+}
+.notifications-container .messages {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  padding: 1em;
+  border-radius: 1em 0 0 1em;
+  transition: background-color 0.5s, box-shadow 0.5s;
+}
+.notifications-container .messages .MuiSnackbar-root {
+  position: relative;
+  bottom: inherit;
+  margin-bottom: 0.4em;
+  transform: translateX(-50%) scale(1);
+  transition: 0.3s ease-out transform;
+}
+.notifications-container .messages .MuiSnackbar-root.closing {
+  transform: translateX(-50%) scale(0.1);
+}
