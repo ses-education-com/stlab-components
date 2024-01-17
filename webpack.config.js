@@ -30,7 +30,7 @@ module.exports = {
       'jss': 'commonjs jss',
       'css-vendor': 'commonjs css-vendor',
       'lodash': 'commonjs lodash',
-      'prop-types': 'commonjs prop-type',
+      // 'prop-types': 'commonjs prop-type',
       'react': 'commonjs react',
       'react-dom': 'commonjs react-dom',
       'react-router-dom': 'commonjs react-router-dom',
