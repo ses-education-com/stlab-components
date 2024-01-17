@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 console.log("\n\n\nBundling the components...\n")
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './src/export.jsx', // Exporting all components here
   output: {
     path: path.resolve(__dirname, 'dist'),
