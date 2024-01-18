@@ -1,0 +1,45 @@
+$bp_tablet: 768px;
+$bp_desktop: 1200px;
+
+#root {
+  --bg-light: #f0f0ec;
+
+  .custom-card-list {
+    .custom-card-list-item {
+      background-color: var(--bg-light);
+      h3 {
+        margin: 0;
+        padding-bottom: 0em;
+      }
+
+      .custom-card-image-container {
+        background-position: center;
+        background-size: cover;
+        @media screen and (max-width: $bp_tablet) {
+          padding-bottom: 56%; // show image on vertical screen
+        }
+      }
+    }
+  }
+
+  ul.columned-list {
+    font-size: 0.9em;
+
+    @media screen and (max-width: $bp_tablet) {
+      column-count: 1;
+    }
+
+    @media screen and (min-width: $bp_tablet) {
+      column-count: 2;
+    }
+
+    @media screen and (min-width: $bp_desktop) {
+      column-count: 3;
+    }
+
+    li {
+      line-height: 1em;
+      margin-bottom: 0.3em;
+    }
+  }
+}
