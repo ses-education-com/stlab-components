@@ -6,7 +6,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 console.log("\n\n\nBundling the components...\n")
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: './src/export.jsx', // Exporting all components here
   output: {
     path: path.resolve(__dirname, 'dist'),
