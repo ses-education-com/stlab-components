@@ -9,7 +9,8 @@ import {
     ImageSelector,
     ModalWindow,
     Notifications,
-    PasswordChangeDialog
+    PasswordChangeDialog,
+    SearchableDropdown
 
  } from "../export";
 
@@ -93,6 +94,67 @@ const props = {
                 type: "success"
             },
         ]
+    },
+    "seachable-dropdown":{
+        pageTitle: "SearchableDropdown",
+        Component: SearchableDropdown,
+        items: [
+            {
+                "iso639-1": "en",
+                "english_name": "English",
+                "local_name": "English",
+                "english_short": "eng",
+                "local_short": "eng",
+                "direction": "ltr",
+                "active": 1
+            },
+            {
+                "iso639-1": "es",
+                "english_name": "Spanish",
+                "local_name": "Español",
+                "english_short": "spa",
+                "local_short": "esp",
+                "direction": "ltr",
+                "active": 1
+            },
+            {
+                "iso639-1": "he",
+                "english_name": "Hebrew",
+                "local_name": "עברית",
+                "english_short": "heb",
+                "local_short": "עבר",
+                "direction": "rtl",
+                "active": 1
+            },
+            {
+                "iso639-1": "ru",
+                "english_name": "Russian",
+                "local_name": "Русский",
+                "english_short": "rus",
+                "local_short": "рус",
+                "direction": "ltr",
+                "active": 1
+            },
+            {
+                "iso639-1": "zh",
+                "english_name": "Chinese",
+                "local_name": "中文",
+                "english_short": "chi",
+                "local_short": "中文",
+                "direction": "ltr",
+                "active": 1
+            }
+        ],
+        searchFields: [
+            "english_name", "english_short", "local_name", "direction"
+        ],
+        onSelect: console.debug,
+        label: "Searchable Dropdown Example",
+        variant: "outlined",
+
+        autocompleteProps: {
+            getOptionLabel: (o) => `${o["iso639-1"]} : ${o.english_name}`
+        }
     },
     "modal-window": {
         pageTitle: "ModalWindow",

@@ -23,8 +23,8 @@
     "@material-ui/data-grid": "^4.0.0-alpha.37",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
-    "react-router-dom": "^5.3.4",
     "react": "^17.0.2",
+    "react-router-dom": "^5.3.4",
     "sass": "^1.69.7",
     "uniquid": "^1.1.4"
   },
@@ -58,5 +58,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1"
   }
 }
