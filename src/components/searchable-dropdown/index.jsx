@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TextField from '@material-ui/core/TextField';
-import Autocomplete from '@material-ui/lab/Autocomplete';
+import {TextField} from '@material-ui/core';
+import {Autocomplete} from '@material-ui/lab';
 import PropTypes from 'prop-types';
 
 
@@ -12,7 +12,7 @@ class SearchableDropdown extends Component {
   };
 
   render() {
-    const { items, searchFields, maxLinesToShow, autocompleteProps = {}, ...textFieldProps  } = this.props;
+    const { items, searchFields, maxLinesToShow, autocompleteProps = {}, onSelect, ...textFieldProps  } = this.props;
 
     return (
       <Autocomplete
